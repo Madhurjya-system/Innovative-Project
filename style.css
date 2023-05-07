@@ -1,0 +1,115 @@
+* {
+  color: white;
+  font-family: "Share Tech", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+html {
+  background-color: #101020;
+}
+
+.background {
+  position: absolute !important;
+  background-color: #101020;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#app {
+  margin-top: 10vh;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-intro{
+  position: relative;
+  left: 450px;
+}
+
+.algorithm-list {
+  position: relative;
+  left:450px;
+  display: flex;
+  flex-direction: column;
+  right: 50px;
+}
+.algorithm-list.p{
+  position: relative;
+  left:550px;
+}
+
+.table-section {
+  position: relative;
+  left:450px;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  align-items: center;
+}
+
+.table-section > * {
+  position: relative;
+  margin-top: 1.2rem;
+}
+.table.tr{
+  color:white;
+  border-color: white;
+}
+.table.th{
+  color: white;
+  border-color: white;
+}
+
+#timeline {
+  width: 800px;
+  overflow: hidden;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+}
+
+#timeline > td,
+th {
+  padding: 0;
+  height: 22px;
+  border: 1px solid #b4ced8;
+}
+
+#timeline th {
+  font: bold 14px "Trebuchet MS", sans-serif;
+  color: #4f6b72;
+  letter-spacing: 2px;
+  text-align: center;
+  background: #cae3ed;
+}
+#timeline td {
+  border: 1px solid black;
+  border-bottom: 0;
+  /*border-right: 0;*/
+  height: 20px;
+  text-align: left;
+}
+
+#cover {
+  background-color: #101020;
+}
+
+
+@media (max-width: 767.98px) {
+  .timer-block {
+    width: 25vw;
+    height: 25vw;
+  }
+}

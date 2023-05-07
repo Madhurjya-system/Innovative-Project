@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visualizing the CPU Scheduling Algorihtms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  <div class="header-intro">
+    <h1>Visualizer for CPU Scheduling Algorithms</h1>
+  </div>   
+      <div class="algorithm-list">
+        <p>Select one among the following Algorithms </p>
+        <form id="algorithm">
+          <div class=" btn-group btn-group-toggle" data-toggle="buttons">
+            <label  class="btn btn-secondary active">
+            <input type="radio" class="form-check-input" name="algorithm" value="fcfs"checked>First-Come, First-Served</input>
+          </label>
+            <label class="btn btn-secondary active">
+            <input type="radio" class="form-check-input" name="algorithm" value="sjf" >Shortest-Job-First</input>  
+          </label>
+            <label class="btn btn-secondary active">
+            <input type="radio" class="form-check-input" name="algorithm" value="priority"> Priority Scheduling</input>
+          </label>
+            <label class="btn btn-secondary active">
+            <input type="radio" class="form-check-input" name="algorithm" value="robin">Round Robin</input>
+          </label>
+        </div>
+        </form>
+        <br />
+      </div>
+      <div class="table-section">
+        <table class="table" id="inputTable">
+          <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th class="servtime">Service Time</th>
+            <th class="priority-only">Priority</th>
+            <th>TAT</th>
+            <th>AWT</th>
+          </tr>
+          <tr>
+            <td>P0</td>
+            <td>0</td>
+            <td>
+              <input class="initial exectime bg-dark text-white" type="text" value="5"/>
+            </td>
+            <td class="servtime"></td>
+            <td class="priority-only initial">
+              <input class="bg-dark text-white" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td>P1</td>
+            <td>1</td>
+            <td>
+              <input class="initial exectime bg-dark text-white" value="3" />
+            </td>
+            <td class="servtime"></td>
+            <td class="priority-only">
+              <input class="bg-dark text-white" type="text" />
+            </td>
+          </tr>
+        </table>
+        <div class="btn-group btn-group-sm" role="group" style="grid-gap: 0.2rem">
+          <button id="minus" type="button" class="btn btn-danger">-</button>
+          <button id="add_btn" type="button" class="btn btn-success">+</button>
+          <button id="draw_btn" type="button" class="btn btn-primary">GO</button>
+        </div>
+        <div class="form-group" id="quantumParagraph" style="display: none">
+          <label for="quantum">Time Quantum(TQ):</label>
+          <input value="3" type="text" class="form-control bg-dark text-white" id="quantum" placeholder="Time Quantum"/>
+        </div>
+        <div id="timeline"> </div>
+        <div class="timer-block">Elapse Time: <strong id="timer"></strong></div>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
+

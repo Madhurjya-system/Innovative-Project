@@ -67,6 +67,7 @@ html {
 }
 .table.tr{
   color:white;
+  border: 1px white;
   border-color: white;
 }
 .table.th{

@@ -87,6 +87,20 @@ th {
   border: 1px solid #b4ced8;
 }
 
+.btn-btn-danger{
+  background-color: lightblue;
+}
+.btn-btn-success{
+  background-color: lightblue;
+}
+.btn-btn-primary{
+  background-color: lightblue;
+}
+.initial-exectime-bg-dark-text-white{
+  color: #101020;
+}
+
+
 #timeline th {
   font: bold 14px "Trebuchet MS", sans-serif;
   color: #4f6b72;

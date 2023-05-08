@@ -47,7 +47,7 @@ export const addRow = () => {
     (lastRowNumebr + 1) +
     "</td><td>" +
     (lastRowNumebr + 1) +
-    '</td><td><input class="exectime-bg-dark-text-white" type="text"/></td><td class="servtime"></td>' +
+    '</td><td><input class="initial-exectime-bg-dark-text-white" type="text"/></td><td class="servtime"></td>' +
     '<td class="priority-only"><input class="bg-dark-text-white" type="text"/></td>';
 
   lastRow.insertAdjacentElement("afterend", newRow);

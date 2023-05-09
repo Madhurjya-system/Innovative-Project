@@ -64,12 +64,7 @@ export const addRow = () => {
       value.style.display = "none";
     });
   }
-
-  var inputs = document.querySelectorAll("#inputTable tr");
-
-  $("#inputTable tr:last input").change(function () {
-    recalculateServiceTime();
-  });
+  recalculateServiceTime()
 };
 
 // Removes the last row in the input table

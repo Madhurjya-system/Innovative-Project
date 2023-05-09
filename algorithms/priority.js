@@ -75,6 +75,8 @@ const priority_Draw = (inputTable, th, td) => {
     "</tr><tr>" +
     td +
     "</tr></table>";
+  var timer = document.querySelector("#timer");
+  timer.innerHTML = sumExecutionTime + "s";
 };
 
 export { priority_Draw, priority_CalcTime };

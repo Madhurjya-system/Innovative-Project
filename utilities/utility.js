@@ -243,20 +243,24 @@ export const removeCover = () => {
   });
 
   var distance = cover.style.height;
+  // var lastServTime = document.querySelector('#inputTable tr:last-child .servtime')
+  // var lastInputTime = document.querySelector('#inputTable tr:last-child input')
+  // var elapseTime = parseInt(lastInputTime.value) + parseInt(lastServTime.innerText)
 
   incrementTimer(sum, 0);
-
   cover.animate(
     { width: [cover.style.width, "0"], marginLeft: distance },
     { duration: (sum * 1000) / 2, easing: "linear" }
   );
   cover.style.width = "0px"
+  // var timer = document.querySelector("#timer");
+  // timer.innerHTML = parseInt(elapseTime) + "s";
 };
 
 // Recursive Function to increment Process Timer By the Total Execution Time
 export const incrementTimer = (total, current) => {
-  var timer = document.querySelector("#timer");
-  timer.innerHTML = current + "s";
+  // var timer = document.querySelector("#timer");
+  // timer.innerHTML = current + "s";
 
   if (current < total) {
     setTimeout(function () {

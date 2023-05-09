@@ -27,7 +27,7 @@ const robin_Draw = (inputTable, th, td) => {
         th +=
           '<th style="height: 60px; width: ' +
           (value.executeTime > quantumTime ? quantumTime : value.executeTime) *
-            50 +
+          50 +
           'px;">P' +
           value.P +
           "</th>";
@@ -46,6 +46,8 @@ const robin_Draw = (inputTable, th, td) => {
     "</tr><tr>" +
     td +
     "</tr></table>";
+  var timer = document.querySelector("#timer");
+  timer.innerHTML = sumExecution + "s";
 };
 
 export { robin_Draw };

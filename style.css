@@ -100,6 +100,12 @@ th {
 .initial-exectime-bg-dark-text-white{
   color: #101020;
 }
+.bg-dark-text-white{
+  color:#101020;
+}
+.form-control-bg-dark-text-white{
+  color: #101020;
+}
 
 
 #timeline th {

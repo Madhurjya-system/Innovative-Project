@@ -71,6 +71,9 @@ const sjf_Draw = (inputTable, th, td) => {
     "</tr><tr>" +
     td +
     "</tr></table>";
+
+  var timer = document.querySelector("#timer");
+  timer.innerHTML = sumExecutionTime + "s";
 };
 
 export { sjf_Draw, sjf_CalcTime };

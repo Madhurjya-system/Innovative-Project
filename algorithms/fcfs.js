@@ -22,7 +22,6 @@ const fcfs_Draw = (inputTable, th, td) => {
   for (var i = 1; i < inputTable.length; i++) {
     var row = inputTable[i];
     td += "<td>" + sumExecutionTime + " sec</td>";
-    arr.push(parseInt(sumExecutionTime))
     var execution_time = parseInt(row.children[2].children[0].value);
     sumExecutionTime += execution_time;
 
@@ -34,28 +33,11 @@ const fcfs_Draw = (inputTable, th, td) => {
       "</th>";
 
   }
-  arr.push(parseInt(sumExecutionTime))
   td += "<td>" + sumExecutionTime + " sec</td>";
 
   document.querySelector("#timeline").innerHTML = '<table id="resultTable"><tr>' + th + "</tr><tr>" + td + "</tr></table>"
   var timer = document.querySelector("#timer");
   timer.innerHTML = sumExecutionTime + "s";
-  const tatCalc = (arr) => {
-    var tatVals = []
-    tatVals.push(arr[1])
-    var k = 1;
-    for (var i = 2; i < arr.length; i++) {
-      tatVals.push(arr[i] - k);
-      k++;
-    }
-    return tatVals;
-  }
-
-  const tatValues = tatCalc(arr);
-  var tatCols = document.querySelectorAll('.tat')
-  for (var i = 0; i < tatCols.length; i++) {
-    tatCols[i].innerText = tatValues[i]
-  }
 };
 
 
